@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- LINK DO CSS -->
+
+    <link rel="stylesheet" href="STYLES/output.css"/>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    <!-- LINK DA FONTE -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <!-- LINK DO ÍCONE DA ABA -->
+
+    <link rel="icon" type="image/x-icon" href="ASSETS/videogame-controller-svgrepo-com.svg"/>
+
+    <title>Promo Games</title>
+</head>
+<body>
+ 
+<!-- HEADER -->
+
+<header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
+    <div class="w-full h-full flex flex-col justify-center items-center">
+        
+        <!-- IMAGEM DA LOGO -->
+
+        <img src="ASSETS/LOGO.png" 
+        alt="LogoJogos" 
+        class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200">
+
+        <h1 class="text-3xl mt-4 mb-2 font-bold text-white">Promo Games</h1>
+
+        <!-- ENDEREÇO FICTÍCIO -->
+
+        <span class="text-white font-medium"> Rua Dev 21, Brasólia - FD</span>
+
+        <!-- HORÁRIO DE FUNCIONAMENTO -->
+
+        <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
+            <span class="font-medium text-white">Seg á Dom - 13:00 as 20:00</span>
+        </div>
+
+    </div>
+</header>
+
+<!-- FIM DO HEADER -->
+
+<h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">Conheça nossos Consoles!</h2>
+
+<br>
+
+<!-- MENU -->
+
+<div id="menu">
+
+    <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+
+        <!-- PRODUTO ITEM 1 -->
+
+        <div class="flex gap-2">
+            <img src="ASSETS/console-1.png" 
+            alt="Nintendo 64" 
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+            <div class="w-full">
+                <p class="font-bold">Nintendo 64</p>
+                <p class="text-sm">
+                    O Nintendo 64 foi um console de videogame lançado pela Nintendo em 1996, conhecido 
+                    por sua tecnologia avançada para a época, incluindo gráficos 3D e controles revolucionários de 
+                    três alavancas.
+                </p>
+
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p>R$ 159.90</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn" 
+                    data-name="Nintendo 64" 
+                    data-price="159.90"
+                    >
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- FIM DO PRODUTO 1 -->
+
+        <!-- PRODUTO ITEM 2 -->
+
+        <div class="flex gap-2">
+            <img src="ASSETS/console-2.png" 
+            alt="Nintendo Gamecube" 
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+            <div class="w-full">
+                <p class="font-bold">Nintendo Gamecube</p>
+                <p class="text-sm">
+                    O Nintendo GameCube, lançado pela Nintendo em 2001, foi um console de videogame 
+                    compacto conhecido por sua tecnologia avançada, incluindo gráficos 
+                    impressionantes para sua época e controles ergonômicos.
+                </p>
+
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p>R$ 390.90</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn" 
+                    data-name="Nintendo Gamecube" 
+                    data-price="390.90"
+                    >
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- FIM DO PRODUTO 2 -->
+
+        <!-- PRODUTO ITEM 3 -->
+
+        <div class="flex gap-2">
+            <img src="ASSETS/console-3.png" 
+            alt="Super Nintendo (SNES)" 
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+            <div class="w-full">
+                <p class="font-bold">Super Nintendo (SNES)</p>
+                <p class="text-sm">
+                    O Super Nintendo Entertainment System (SNES), lançado pela Nintendo em 1990, foi um 
+                    console de videogame de 16 bits que se destacou por sua vasta biblioteca de jogos e 
+                    gráficos avançados para a época.
+                </p>
+
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p>R$ 390.90</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn" 
+                    data-name="Super Nintendo (SNES)" 
+                    data-price="390.90"
+                    >
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- FIM DO PRODUTO 3 -->
+
+        <!-- PRODUTO ITEM 4 -->
+
+        <div class="flex gap-2">
+            <img src="ASSETS/console-4.png" 
+            alt="Playstation 2" 
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+            <div class="w-full">
+                <p class="font-bold">Playstation 2</p>
+                <p class="text-sm">
+                    O PlayStation 2, lançado pela Sony em 2000, foi um console de videogame de grande 
+                    sucesso, reconhecido por sua ampla biblioteca de jogos e por ser o primeiro a 
+                    incorporar a capacidade de reprodução de DVDs.
+                </p>
+
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p>R$ 175.50</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn" 
+                    data-name="Playstation 2"
+                    data-price="175.50"
+                    >
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- FIM DO PRODUTO 4 -->
+
+        <!-- PRODUTO ITEM 5 -->
+
+        <div class="flex gap-2">
+            <img src="ASSETS/console-5.png" 
+            alt="PSP" 
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+            <div class="w-full">
+                <p class="font-bold">PSP</p>
+                <p class="text-sm">
+                    O PlayStation Portable (PSP), lançado pela Sony em 2004, foi um console 
+                    portátil revolucionário, conhecido por sua tecnologia avançada e tela de 
+                    alta qualidade.
+                </p>
+
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p>R$ 115.90</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn" 
+                    data-name="PSP"
+                    data-price="115.90"
+                    >
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- FIM DO PRODUTO 5 -->
+
+        <!-- PRODUTO ITEM 6 -->
+
+        <div class="flex gap-2">
+            <img src="ASSETS/console-6.png" 
+            alt="Nintendo 3DS XL" 
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+            <div class="w-full">
+                <p class="font-bold">Nintendo 3DS XL</p>
+                <p class="text-sm">
+                    O Nintendo 3DS XL, lançado pela Nintendo em 2012, foi uma versão ampliada do 
+                    Nintendo 3DS, oferecendo uma tela maior e melhorias ergonômicas. Este console 
+                    portátil trouxe consigo a inovadora tecnologia de tela 3D sem a necessidade de 
+                    óculos especiais.
+                </p>
+
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p>R$ 275.70</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn" 
+                    data-name="Nintendo 3DS XL"
+                    data-price="275.70"
+                    >
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- FIM DO PRODUTO 6 -->
+
+        <!-- PRODUTO ITEM 7 -->
+
+        <div class="flex gap-2">
+            <img src="ASSETS/console-7.png" 
+            alt="Xbox 360 Slim" 
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+            <div class="w-full">
+                <p class="font-bold">Xbox 360 Slim</p>
+                <p class="text-sm">
+                    O Xbox 360, lançado pela Microsoft em 2005, foi um console de videogame de grande 
+                    sucesso, conhecido por sua robusta funcionalidade online, biblioteca diversificada 
+                    de entretenimento e pela introdução do sistema de conquistas (achievements).
+                </p>
+
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p>R$ 199.99</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn" 
+                    data-name="Xbox 360 Slim"
+                    data-price="199.99"
+                    >
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- FIM DO PRODUTO 7 -->
+
+        <!-- PRODUTO ITEM 8 -->
+
+        <div class="flex gap-2">
+            <img src="ASSETS/console-8.png" 
+            alt="GameBoy Advance SP" 
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+            <div class="w-full">
+                <p class="font-bold">GameBoy Advance SP</p>
+                <p class="text-sm">
+                    O Game Boy Advance SP, lançado pela Nintendo em 2003, foi uma versão aprimorada 
+                    do Game Boy Advance, caracterizada por seu design dobrável, tela retroiluminada e 
+                    bateria recarregável.
+                </p>
+
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p>R$ 95.99</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn" 
+                    data-name="GameBoy Advance SP"
+                    data-price="95.99"
+                    >
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- FIM DO PRODUTO 8 -->
+
+        <!-- PRODUTO ITEM 9 -->
+
+        <div class="flex gap-2">
+            <img src="ASSETS/console-9.png" 
+            alt="GameBoy" 
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+            <div class="w-full">
+                <p class="font-bold">GameBoy</p>
+                <p class="text-sm">
+                    O Game Boy, lançado pela Nintendo em 1989, foi um dos primeiros consoles portáteis 
+                    de sucesso, com uma grande biblioteca de jogos e uma bateria de longa duração, 
+                    oferecendo aos jogadores a oportunidade de jogar em qualquer lugar.
+                </p>
+
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p>R$ 59.65</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn" 
+                    data-name="GameBoy"
+                    data-price="59.65"
+                    >
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- FIM DO PRODUTO 9 -->
+
+    </main>
+
+    <div class="text-center mx-auto max-w-7xl px-2 my-2">
+        <h2 class="font-bold text-3xl">
+            Jogos
+        </h2>
+    </div>
+
+    <br>
+
+    <br>
+
+    <!-- GRID DOS JOGOS -->
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
+
+        <!-- (JOGOS) PRODUTO ITEM 1  -->
+
+        <div class="flex gap-2 w-full">
+            <img src="ASSETS/jogo-1.png" 
+            alt="Donkey Kong Country (SNES)" 
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+            <div class="w-full">
+                <p class="font-bold">Donkey Kong Country (SNES)</p>
+
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p>R$ 32.50</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn" 
+                    data-name="Donkey Kong Country (SNES)" 
+                    data-price="32.50">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- (JOGOS) FIM DO PRODUTO 1 -->
+
+        <!-- (JOGOS) PRODUTO ITEM 2  -->
+
+        <div class="flex gap-2 w-full">
+            <img src="ASSETS/jogo-2.png" 
+            alt="Super Mario World (SNES)" 
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+            <div class="w-full">
+                <p class="font-bold">Super Mario World (SNES)</p>
+
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p>R$ 40.50</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn" 
+                    data-name="Super Mario World (SNES)" 
+                    data-price="40.50">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- (JOGOS) FIM DO PRODUTO 2 -->
+
+        <!-- (JOGOS) PRODUTO ITEM 3  -->
+
+        <div class="flex gap-2 w-full">
+            <img src="ASSETS/jogo-3.png" 
+            alt="The Legend of Zelda: A Link to the Past (SNES)" 
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+            <div class="w-full">
+                <p class="font-bold">The Legend of Zelda: A Link to the Past (SNES)</p>
+
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p>R$ 37.90</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn" 
+                    data-name="The Legend of Zelda: A Link to the Past (SNES)" 
+                    data-price="37.90">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- (JOGOS) FIM DO PRODUTO 3 -->
+
+        <!-- (JOGOS) PRODUTO ITEM 4  -->
+
+        <div class="flex gap-2 w-full">
+            <img src="ASSETS/jogo-4.png" 
+            alt="Pokémon Emerald Version (GBA)" 
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+            <div class="w-full">
+                <p class="font-bold">Pokémon Emerald Version (GBA)</p>
+
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p>R$ 25.50</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn" 
+                    data-name="Pokémon Emerald Version (GBA)" 
+                    data-price="25.50">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- (JOGOS) FIM DO PRODUTO 4 -->
+
+        <!-- (JOGOS) PRODUTO ITEM 5 -->
+
+        <div class="flex gap-2 w-full">
+            <img src="ASSETS/jogo-5.png" 
+            alt="Super Mario Bros 3 (GBA)" 
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+            <div class="w-full">
+                <p class="font-bold">Super Mario Bros 3 (GBA)</p>
+
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p>R$ 27.50</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn" 
+                    data-name="Super Mario Bros 3 (GBA)" 
+                    data-price="27.50">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- (JOGOS) FIM DO PRODUTO 5 -->
+
+        <!-- (JOGOS) PRODUTO ITEM 6 -->
+
+        <div class="flex gap-2 w-full">
+            <img src="ASSETS/jogo-6.png" 
+            alt="Mario Kart Double Dash (GameCube)" 
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+            <div class="w-full">
+                <p class="font-bold">Mario Kart Double Dash (GameCube)</p>
+
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p>R$ 31.70</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn" 
+                    data-name="Mario Kart Double Dash (GameCube)" 
+                    data-price="31.70">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- (JOGOS) FIM DO PRODUTO 6 -->
+
+        <!-- (JOGOS) PRODUTO ITEM 7 -->
+
+        <div class="flex gap-2 w-full">
+            <img src="ASSETS/jogo-7.png" 
+            alt="Super Smash Bros (3DS)" 
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+            <div class="w-full">
+                <p class="font-bold">Super Smash Bros (3DS)</p>
+
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p>R$ 37.70</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn" 
+                    data-name="Super Smash Bros (3DS)" 
+                    data-price="37.70">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- (JOGOS) FIM DO PRODUTO 7 -->
+
+        <!-- (JOGOS) PRODUTO ITEM 8 -->
+
+        <div class="flex gap-2 w-full">
+            <img src="ASSETS/jogo-8.png" 
+            alt="God of War (PS2)" 
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+            <div class="w-full">
+                <p class="font-bold">God of War (PS2)</p>
+
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p>R$ 39.80</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                    data-name="God of War (PS2)" 
+                    data-price="39.80">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- (JOGOS) FIM DO PRODUTO 8 -->
+
+        <!-- (JOGOS) PRODUTO ITEM 9 -->
+
+        <div class="flex gap-2 w-full">
+            <img src="ASSETS/jogo-9.png" 
+            alt="Banjo Kazooie (N64)" 
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+            <div class="w-full">
+                <p class="font-bold">Banjo Kazooie (N64)</p>
+
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p>R$ 27.85</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn" 
+                    data-name="Banjo Kazooie (N64)" 
+                    data-price="27.85">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- (JOGOS) FIM DO PRODUTO 9 -->
+
+    </div>
+
+    <!-- FIM DA GRID DE JOGOS -->
+
+</div>
+
+<!-- FIM DO MENU -->
+
+<!-- MODAL CART -->
+
+<div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden"
+    id="cart-modal">
+
+    <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+        <h2 class="text-center font-bold text-2xl mb-2">Meu carrinho</h2>
+
+        <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+
+        <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
+
+        <p class="font-bold mt-4">Endereço de Entrega:</p>
+        <input
+            type="text"
+            placeholder="Digite seu endereço completo aqui..."
+            id="address"
+            class="w-full border-2 p-1 rounded my-1"/>
+
+            <p class="text-red-500 hidden" id="address-warn">Digite seu endereço completo!</p>
+
+            <div class="flex items-center justify-between mt-5 w-full">
+                <button class="font-bold" id="close-modal-btn">Fechar</button>
+                <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded">Finalizar Pedido</button>
+            </div>
+    </div>
+
+</div>
+
+<!-- FIM DO MODAL CART -->
+
+<!-- BUTTON CART FOOTER -->
+
+<footer class="w-full bg-blue-500 py-3 fixed bottom-0 z-40 flex items-center justify-center">
+    <button
+    class="flex items-center gap-2 text-white font-bold"
+    id="cart-btn">
+    
+    (<span id="cart-count">0</span>)
+    Veja meu carrinho:
+    <i class="fa fa-cart-plus text-lg text-white"></i>
+    </button>
+</footer>
+
+<!-- FIM DO BUTTON CART FOOTER -->
+
+<!-- LINK DO JAVA SCRIPT -->
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
+<!-- FIM DO HTML -->
+
+<!-- PROF. ALEXSANDER BARRETO -->
