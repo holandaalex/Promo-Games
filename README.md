@@ -7,6 +7,8 @@ https://promo-games-nine.vercel.app/
 
 https://dev.alexholanda.com.br/promo-games/
 
+https://dev.alexholanda.com.br/cardapio-digital/
+
 
 # Funcionalidades
 Layout responsivo e moderno
