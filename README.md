@@ -6,3 +6,16 @@ A ideia é criar um cardápio online que faça pedidos/solicitação via whats -
 https://promo-games-nine.vercel.app/
 
 https://dev.alexholanda.com.br/promo-games/
+
+
+# Funcionalidades
+Layout responsivo e moderno
+Estilização com TailwindCSS
+Seções para diferentes categorias de produtos (lanches, bebidas, sobremesas)
+Menu com navegação fluída e visual atrativo
+Animações suaves com interações simples.
+
+# Tecnologias Utilizadas
+⚙️ HTML5
+💅 TailwindCSS
+⚡ JavaScript
